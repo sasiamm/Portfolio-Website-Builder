@@ -1,0 +1,283 @@
+/* Resetting margins, paddings, and setting font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Full-page container */
+body {
+  /* height: 100vh; */
+  max-width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(270deg, #d2f4d2, #c6e6c6);
+  margin: 0;
+}
+
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Adjusts spacing between elements */
+}
+
+.navbar {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+.nav-btn {
+  padding: 10px 15px;
+  background-color: #1D976C; /* Example background color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-btn {
+  padding: 10px 15px;
+  background-color: #dc3545; /* Example background color for logout */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+
+/* Header Styles */
+.header {
+  width: 100%;
+  max-width: 1350px;
+  background-color: white;
+  color: #1D976C;
+  font-weight: bold;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  /* backdrop-filter: blur(10px); */
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.username {
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.logout-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f;
+}
+
+
+.footer {
+  background-color: #333; /* Dark background for the footer */
+  color: white; /* White text color */
+  padding: 20px; /* Padding around the footer */
+  position: relative; /* Allow positioning */
+  bottom: 0; /* Stick to the bottom */
+  width: 100%; /* Full width */
+  text-align: center; /* Centered text */
+}
+
+.footer-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center items vertically */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1; /* Allow sections to grow equally */
+  min-width: 200px; /* Minimum width for each section */
+  text-align: center; /* Center text in each section */
+  margin: 10px; /* Margin around sections */
+}
+
+.developer-info {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  text-align: left;
+}
+
+.developer-info li {
+  margin: 5px 0; 
+  color: white; /* White text color */
+}
+
+.developer-info a {
+  color: white;
+  text-decoration: none; /* Remove underline from links */
+}
+
+.developer-info a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.logout-btn {
+  background-color: #ff4d4d; /* Red background for the logout button */
+  color: white; /* White text color */
+  border: none; /* No border */
+  padding: 10px 20px; /* Padding for the button */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+}
+
+.logout-btn:hover {
+  background-color: #ff1a1a; /* Darker red on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: center; /* Center align items */
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+      text-align: center; /* Center text in each section */
+      margin: 5px 0; /* Adjust margin for vertical layout */
+  }
+}
+
+
+/* Responsive Header Styles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-container {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .username {
+    margin-bottom: 10px;
+  }
+}
+
+/* Main content container */
+.container {
+  display: flex;
+  width: 90vw;
+  max-width: 1240px;
+  height: 80%;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-top: 80px; /* Adjusted for header */
+  margin-bottom: 20px;
+}
+
+/* Left side: Image */
+.left {
+  flex: 1;
+  overflow: hidden; /* Ensures the image remains contained */
+}
+
+.left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures proper aspect ratio */
+}
+
+/* Right side: Buttons */
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Button styles */
+a {
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  text-decoration: none;
+}
+
+/* Different colors for each button */
+.preview-btn {
+  background-color: #FF4B2B;
+  color: white;
+}
+
+.generate-btn {
+  background-color: #1D976C;
+  color: white;
+}
+
+a:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Responsive Styles for Main Container */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    width: 85%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .left,
+  .right {
+    flex: none;
+    width: 100%;
+  }
+
+  .right {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  a {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}

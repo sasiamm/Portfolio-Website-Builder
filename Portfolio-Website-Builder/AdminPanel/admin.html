@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+
+  <!-- Firebase Libraries -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js"></script>
+
+  <!-- Custom JS File -->
+  <script type="module" src="admin.js" defer></script>
+
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <h2>PortBuilder Admin</h2>
+    <ul>
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="/Portfolio-Website-Builder/AdminPanel/UserInfo/user.html">Users</a></li>
+      <li><a href="#" id="logoutBtn">Logout</a></li>
+    </ul>
+  </div>
+
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <header>
+      <h1>Admin Dashboard</h1>
+    </header>
+
+
+    <section class="dashboard-cards">
+      <div class="card">
+        <h3>Total Users</h3>
+        <p id="totalUsers">Loading...</p>
+      </div>
+      <div class="card">
+        <h3>Total Admins</h3>
+        <p id="totalAdmin">Loading...</p>
+      </div>
+      <div class="card">
+        <h3>Total regular users</h3>
+        <p id="totalRegUser">Loading...</p>
+      </div>
+      <div class="card">
+        <h3>Total designs</h3>
+        <p id="totalDesign">Loading...</p>
+      </div>
+      
+    </section>
+  </div>
+
+</body>
+</html>

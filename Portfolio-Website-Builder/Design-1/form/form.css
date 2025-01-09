@@ -1,0 +1,121 @@
+/* Reset styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(270deg, #d2f4d2, #c6e6c6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px;
+  }
+
+  form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  label {
+    font-weight: bold;
+    color: #555;
+    display: block;
+  }
+
+  /* Full-width input fields and textareas */
+  input[type="text"],
+  input[type="file"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+  }
+
+  /* Hover effect for input fields and textareas */
+  input[type="text"]:hover,
+  input[type="file"]:hover,
+  textarea:hover {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Glow effect */
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  input[type="submit"],
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s; /* Add transform transition */
+  }
+
+  /* Hover effect on buttons */
+  input[type="submit"]:hover,
+  button:hover {
+    background-color: #45a049;
+    transform: scale(1.02); /* Slightly enlarge on hover */
+  }
+
+  #generateContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+  }
+
+  
+
+  #generatePortfolio:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  #fillMessage {
+    color: red;
+    font-size: 14px;
+    display: none;
+  }
+
+  /* Show fill message only when generate button is disabled */
+  #generatePortfolio:disabled + #fillMessage {
+    display: inline;
+  }
+
+  @media (max-width: 600px) {
+    .row {
+      flex-direction: column;
+    }
+  }

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <h1>Form of Design-2</h1>
+    <div class="container">
+        <h2>Home Page</h2>
+
+        <form action="#" method="POST" id="service-form">
+            <!-- Name and Description -->
+            <div class="form-group">
+                <!-- <h2>Home Page</h2> -->
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" name="description" placeholder="Enter description" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="profile-picture">Upload a Picture</label>
+                <input type="file" id="profile-picture" name="profile-picture" accept="image/*" required>
+            </div>
+
+            <!-- Service Page -->
+
+            <h2>Service Page</h2>
+
+            <div class="form-group">
+                <label for="service-tagline">Service Page Tagline</label>
+                <input type="text" id="service-tagline" name="service-tagline" placeholder="Provide Wide Range of Digital Services" required>
+            </div>
+
+            <div class="form-group">
+                <label for="service-1-heading">Service - 1 Heading</label>
+                <input type="text" id="service-1-heading" name="service-1-heading" placeholder="Enter service heading like: Data Scientist" required>
+            </div>
+
+            <div class="form-group">
+                <label for="service-1-description">Service - 1 Description</label>
+                <textarea id="service-1-description" name="service-1-description" placeholder="Enter service description" required></textarea>
+            </div>
+
+
+            <div class="form-group">
+                <label for="service-2-heading">Service - 2 Heading</label>
+                <input type="text" id="service-2-heading" name="service-2-heading" placeholder="Enter service heading like: Web Developer" required>
+            </div>
+
+            <div class="form-group">
+                <label for="service-2-description">Service - 2 Description</label>
+                <textarea id="service-2-description" name="service-2-description" placeholder="Enter service description" required></textarea>
+            </div>
+
+
+            <div class="form-group">
+                <label for="service-3-heading">Service - 3 Heading</label>
+                <input type="text" id="service-3-heading" name="service-3-heading" placeholder="Enter service heading like: Data analyst" required>
+            </div>
+
+            <div class="form-group">
+                <label for="service-3-description">Service - 3 Description</label>
+                <textarea id="service-3-description" name="service-3-description" placeholder="Enter service description" required></textarea>
+            </div>
+
+            <!-- Skills -->
+            <h2>Skills Page</h2>
+            <div class="skills-container">
+                <div>
+                    <label for="skill-1">Skill 1</label>
+                    <input type="text" id="skill-1" name="skill-1" placeholder="Enter skill name" required>
+                </div>
+                <div>
+                    <label for="skill-2">Skill 2</label>
+                    <input type="text" id="skill-2" name="skill-2" placeholder="Enter skill name" required>
+                </div>
+                <div>
+                    <label for="skill-3">Skill 3</label>
+                    <input type="text" id="skill-3" name="skill-3" placeholder="Enter skill name" required>
+                </div>
+                <div>
+                    <label for="skill-4">Skill 4</label>
+                    <input type="text" id="skill-4" name="skill-4" placeholder="Enter skill name" required>
+                </div>
+            </div>
+
+            <!-- Skills Tag and Description -->
+            <div class="form-group">
+                <label for="skills-tag">Skills Tag</label>
+                <input type="text" id="skills-tag" name="skills-tag" placeholder="Enter skills tag like : Beautiful & Unique Digital Experiences" required>
+            </div>
+
+            <div class="form-group">
+                <label for="skills-description">Skills Description</label>
+                <textarea id="skills-description" name="skills-description" placeholder="Enter description for skills" required></textarea>
+            </div>
+
+            <!-- Download CV -->
+            <div class="form-group">
+                <label for="cv">Drop you CV</label>
+                <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+            </div>
+
+
+            <!-- Contact Page -->
+
+            <h2>Contact Page</h2>
+
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+
+            <!-- Submit Button -->
+            <div class="form-btn">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+
+        <div id="generateContainer">
+            <button id="generatePortfolio" disabled>Generate Portfolio Website</button>
+            <span id="fillMessage">Fill the form first</span>
+        </div>
+    </div>
+
+</body>
+
+
+<script src="form.js"></script>
+
+
+</html>

@@ -1,0 +1,82 @@
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: linear-gradient(270deg, #d2f4d2, #c6e6c6);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Landing container styling */
+.landing-container {
+  text-align: center;
+  color: black;
+  opacity: 0; /* Start with hidden opacity for animation */
+  animation: fadeIn 1s forwards; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  animation: slideIn 0.8s ease forwards; /* Slide-in animation */
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(-20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  animation: fadeInUp 0.8s 0.2s forwards; /* Delayed fade-in */
+}
+
+@keyframes fadeInUp {
+  from {
+      transform: translateY(20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/* Button styling */
+.home-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.home-btn:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.05);
+}

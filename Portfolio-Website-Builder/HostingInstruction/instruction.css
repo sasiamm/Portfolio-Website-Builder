@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(270deg, #d2f4d2, #c6e6c6);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjusts spacing between elements */
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+  }
+  
+  .nav-btn {
+    padding: 10px 15px;
+    background-color: #1D976C; /* Example background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .logout-btn {
+    padding: 10px 15px;
+    background-color: #dc3545; /* Example background color for logout */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  /* Header Styles */
+  .header {
+    width: 100%;
+    max-width: 1350px;
+    background-color: white;
+    color: #1D976C;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    /* backdrop-filter: blur(10px); */
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .username {
+    margin-right: 20px;
+    font-size: 18px;
+  }
+
+.container {
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 90%;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+p{
+    margin-top: 10px;
+}
+
+
+
+.footer {
+    background-color: #333; /* Dark background for the footer */
+    color: white; /* White text color */
+    padding: 20px;
+    left: 0;
+    
+    position: relative; /* Allow positioning */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+    text-align: center; /* Centered text */
+  }
+  
+  .footer-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  }
+  
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    flex: 1; /* Allow sections to grow equally */
+    min-width: 200px; /* Minimum width for each section */
+    text-align: center; /* Center text in each section */
+    margin: 10px; /* Margin around sections */
+  }
+  
+  .developer-info {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    text-align: left;
+  }
+  
+  .developer-info li {
+    margin: 5px 0; 
+    color: white; /* White text color */
+  }
+  
+  .developer-info a {
+    color: white;
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .developer-info a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  .logout-btn {
+    background-color: #ff4d4d; /* Red background for the logout button */
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+  }
+  
+  .logout-btn:hover {
+    background-color: #ff1a1a; /* Darker red on hover */
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center align items */
+    }
+  
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        text-align: center; /* Center text in each section */
+        margin: 5px 0; /* Adjust margin for vertical layout */
+    }
+  }
+  
+  

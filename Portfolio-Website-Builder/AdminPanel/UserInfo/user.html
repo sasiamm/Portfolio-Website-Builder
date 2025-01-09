@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="user.css">
+    <title>Admin User Management</title>
+</head>
+
+<body>
+    <div class="sidebar" id="sidebar">
+        <h2>PortBuilder Admin</h2>
+        <ul>
+            <li><a href="/Portfolio-Website-Builder/AdminPanel/admin.html">Dashboard</a></li>
+            <li><a href="#">Users</a></li>
+            <li><a href="#" id="logoutBtn">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1>User Management</h1>
+        <div class="user-list">
+            <label for="roleSelect">Select Role:</label>
+            <select id="roleSelect">
+                <option value="all">All</option>
+                <option value="Admin">Admin</option>
+                <option value="User">User </option>
+            </select>
+            <table id="userTable">
+                <thead>
+                    <tr>
+                        <th>Email</th>
+                        <th>Name</th>
+                        <th>Password</th>
+                        <th>Role</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- User rows will be populated here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script type="module" src="user.js"></script>
+</body>
+
+</html>

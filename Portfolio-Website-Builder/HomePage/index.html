@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Portfolio Website Generator</title>
+    <link rel="stylesheet" href="homeStyle.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="username">Welcome, <span id="userName">Loading... </span></div>
+            <nav class="navbar">
+                <button id="homeBtn" class="nav-btn" style="font-weight: bold; font-size: 17px">Home</button>
+                <button id="hostingInstructionsBtn" class="nav-btn" onclick="window.location.href='/Portfolio-Website-Builder/HostingInstruction/instruction.html'">Hosting Instructions</button>
+            </nav>
+            <!-- <button id="logoutBtn" class="logout-btn">Logout</button> -->
+        </div>
+    </header>
+
+    <div class="container portfolio">
+        <!-- Left side: Image section -->
+        <div class="left">
+            <img src="jarin.png" alt="Portfolio Image">
+        </div>
+
+        <!-- Right side: Button section -->
+        <div class="right">
+            <h1>Design-1</h1>
+            <a href="/Portfolio-Website-Builder/Design-1/preview/preview.html" class="preview-btn">Preview</a>
+            <a href="/Portfolio-Website-Builder/Design-1/form/form.html" class="generate-btn">Generate</a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="container portfolio">
+        <!-- Left side: Image section -->
+        <div class="left">
+            <img src="siam.png" alt="Portfolio Image">
+        </div>
+
+        <!-- Right side: Button section -->
+        <div class="right">
+            <h1>Design-2</h1>
+            <a href="/Portfolio-Website-Builder/Design-2/preview/preview.html" class="preview-btn">Preview</a>
+            <a href="/Portfolio-Website-Builder/Design-2/form/form.html" class="generate-btn">Generate</a>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>&copy; 2024 @SamiulSiam. All rights reserved.</p>
+            </div>
+            <div class="footer-center">
+                <ul class="developer-info">
+                    <li><strong>Developer:</strong> Samiul Siam</li>
+                    <li><strong>Email:</strong> samiulsiam45@gmail.com</li>
+                    <!-- <li><strong>GitHub:</strong> <a href="https://github.com/ankon" target="_blank">github.com/ankon</a></li> -->
+                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/SamiulSiam/" target="_blank">SamiulSiam</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <button id="logoutBtn" class="logout-btn">Logout</button>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script type="module" src="home.js"></script>
+
+</body>
+
+</html>
